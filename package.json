@@ -1,0 +1,14 @@
+{
+  "id": "zalo",
+  "name": "Zalo",
+  "description": "Zalo service for Franz",
+  "version": "1.0.0",
+  "author": "Evan Nguyen <dacsang97@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://chat.zalo.me/",
+    "hasDirectMessages": true,
+    "hasNotificationSound": true
+  }
+}
