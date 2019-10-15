@@ -1,12 +1,14 @@
 module.exports = Franz => {
   const getMessages = function getMessages() {
+    let count = 0
     let unread = document.querySelector('.unread-div-const > i')
     if (unread) {
-      let count = unread.classList[2].replace('fa-', '')
-      if (count !== '5plus') {
-        Franz.setBadge(parseInt(count))
+      let numStr = unread.classList[2].replace('fa-', '')
+      if (numStr !== '5plus') {
+        count = parseInt(numStr)
       }
     }
+    Franz.setBadge(count)
   }
   Franz.loop(getMessages)
 }
